@@ -1,0 +1,29 @@
+<h2>Listado de productos</h2>
+<table class="tabla-productos">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Presio</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedido of pedidos">
+      <td>{{ pedido.id }}</td>
+      <td>{{ pedido.nombre }}</td>
+      <td>{{ pedido.precio }}</td>
+      <td>
+        <a [routerLink]="['/menu/editar', pedido.id]">
+          Editar
+        </a>
+      </td>
+      <td>
+        <button (click)="eliminarPedido(pedido)">
+          Eliminar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

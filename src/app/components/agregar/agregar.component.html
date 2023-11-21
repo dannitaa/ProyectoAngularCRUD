@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Agregar mascota</h2>
+    <form (ngSubmit)="onSubmit()" #forPedido="ngForm">
+        <p>
+    
+          
+                <input matInput name="nombre" [(ngModel)]="pedidoModel.nombre"
+                    type="text"
+                    placeholder="Nombre">
+            
+        </p>
+        <p>
+           
+                <input matInput name="raza" [(ngModel)]="pedidoModel.precio"
+                    type="text"
+                    placeholder="Raza">
+            
+        </p>
+      
+        <p>
+            <button type="submit" mat-flat-button color="accent">Guardar</button>
+        </p>
+    </form>
+    
+
+</body>
+</html>
+
+

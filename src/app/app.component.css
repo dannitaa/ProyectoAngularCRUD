@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
+
+.navbar{
+    background-color: chocolate;
+    border: 5px;
+    border-color: aliceblue;
+}
+
+.nav-link{
+    color: aliceblue;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 20px;
+
+}
+
+.navbar-brand{
+    font-family: 'Gabarito', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.nav{
+    padding-right: 20px;
+}

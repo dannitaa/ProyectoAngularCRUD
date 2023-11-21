@@ -1,0 +1,15 @@
+<h2>Editar mascota</h2>
+<form (ngSubmit)="onSubmit()" #formPedido="ngForm">
+    <label>Nombre: 
+        <input name="nombre" [(ngModel)]="pedido.nombre">
+    </label>
+
+    <label>Precio: 
+        <input name="precio" [(ngModel)]="pedido.precio" type="number">
+    </label>
+
+    <p>
+        <button type="submit">Guardar</button>
+        <button (click)="volver()" type="button">Volver</button>
+    </p>
+</form>

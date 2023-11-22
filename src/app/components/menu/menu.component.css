@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Pacifico&display=swap');
+
+.container{
+    padding-top: 60px;
+}
+
+.titulo{
+    text-align: center;
+    padding-bottom: 50px;
+    color: #000000;
+    font-weight: 100;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+th{
+    font-size: 22px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.productos{
+    font-size: 20px;
+    font-weight: 350;
+    font-family: 'Outfit', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+}
+
+a:hover{
+    color: #990808;
+}
+
+.botonesAcc{
+   text-decoration: none;
+   background-color: #990808;
+   color: white;
+   font-size: 20px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botonesAcc:hover{
+    color: #990808;
+    background-color: #edc537;
+}

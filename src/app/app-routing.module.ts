@@ -8,7 +8,8 @@ import { EditarComponent } from './components/editar/editar.component';
 
 const routes: Routes = [
 
-  {path: '', redirectTo: "/menu", pathMatch: "full" },
+  
+  {path: '', component: InicioComponent},
   {path: 'menu', component: MenuComponent},
   { path: "menu/agregar", component: AgregarComponent },
   { path: "menu/editar/:id", component: EditarComponent },

@@ -1,29 +1,54 @@
-<h2>Listado de productos</h2>
-<table class="tabla-productos">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Nombre</th>
-      <th>Presio</th>
-      <th>Editar</th>
-      <th>Eliminar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let pedido of pedidos">
-      <td>{{ pedido.id }}</td>
-      <td>{{ pedido.nombre }}</td>
-      <td>{{ pedido.precio }}</td>
-      <td>
-        <a [routerLink]="['/menu/editar', pedido.id]">
-          Editar
-        </a>
-      </td>
-      <td>
-        <button (click)="eliminarPedido(pedido)">
-          Eliminar
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <h2 class="titulo">Menú</h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre del producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Eliminar</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr *ngFor="let pedido of pedidos">
+          <td class="productos" scope="row">{{ pedido.id }}</td>
+          <td class="productos">{{ pedido.nombre }}</td>
+          <td class="productos">{{ pedido.precio }}</td>
+          <td>
+            <button class="botonesAcc">
+              <a  [routerLink]="['/menu/editar', pedido.id]">
+                Editar
+              </a>
+            </button>
+           
+          </td>
+          <td>
+            <button class="botonesAcc" (click)="eliminarPedido(pedido)">
+              Eliminar
+            </button>
+          </td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+
+  
+
+
+
+</body>
+</html>
+

@@ -1,15 +1,54 @@
-<h2>Editar mascota</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2 class="titulo">Editar producto</h2>
+
+
+
 <form (ngSubmit)="onSubmit()" #formPedido="ngForm">
-    <label>Nombre: 
-        <input name="nombre" [(ngModel)]="pedido.nombre">
-    </label>
 
-    <label>Precio: 
-        <input name="precio" [(ngModel)]="pedido.precio" type="number">
-    </label>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nombre: 
+        </label>
+        <input class="form-control" matInput name="nombre" [(ngModel)]="pedido.nombre">
+    </div>
 
-    <p>
-        <button type="submit">Guardar</button>
-        <button (click)="volver()" type="button">Volver</button>
-    </p>
+    
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Precio: 
+        </label>
+        <input class="form-control" matInput name="precio" [(ngModel)]="pedido.precio" type="number">
+
+    </div>
+    
+<br>
+    
+        <div  class="otroContenedor">
+            <button class="guardarButton" type="submit">Guardar</button>  &nbsp;
+            <button class="guardarButton" (click)="volver()" type="button">Volver</button>
+        </div>
+        
+    
 </form>
+
+
+
+
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
+

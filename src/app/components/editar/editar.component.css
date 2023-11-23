@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Pacifico&display=swap');
+
+.container{
+    padding-top: 60px;
+}
+
+.titulo{
+    text-align: center;
+    padding-bottom: 50px;
+    color: #000000;
+    font-weight: 100;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.form-label{
+    font-size: 22px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.form-control{
+    border-color: #990808;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+}
+
+.otroContenedor{
+    padding-left: 29%;
+    gap: 10%;
+    }
+
+.guardarButton{
+    color: white;
+    background-color: #990808;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    font-family: 'Outfit', sans-serif;
+    border: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.guardarButton:hover{
+    background-color: #edc537;
+    color: #990808;
+}

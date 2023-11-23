@@ -25,7 +25,7 @@
         <tr *ngFor="let pedido of pedidos">
           <td class="productos" scope="row">{{ pedido.id }}</td>
           <td class="productos">{{ pedido.nombre }}</td>
-          <td class="productos">{{ pedido.precio }}</td>
+          <td class="productos">${{ pedido.precio }}</td>
           <td>
             <button class="botonesAcc">
               <a  [routerLink]="['/menu/editar', pedido.id]">
@@ -43,6 +43,19 @@
        
       </tbody>
     </table>
+
+    <br>
+
+<div class="otroContenedor">
+  <div class="d-grid gap-2">
+    <a class="agregarButton" [routerLink]="['agregar']">Agregar producto</a>
+   
+  </div>
+
+</div>
+    
+
+
   </div>
 
   

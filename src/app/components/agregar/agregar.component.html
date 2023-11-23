@@ -7,31 +7,48 @@
 </head>
 <body>
     
-    <h2>Agregar mascota</h2>
+    <div class="container">
+
+        <h2 class="titulo">Agregar producto</h2>
+
+
     <form (ngSubmit)="onSubmit()" #forPedido="ngForm">
-        <p>
-    
+
+        
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre del producto:</label>
+                <input class="form-control" matInput name="nombre" [(ngModel)]="pedidoModel.nombre"
+                type="text" placeholder="Nombre del producto">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Precio:</label>
+               
+                <input class="form-control" matInput name="raza" [(ngModel)]="pedidoModel.precio"
+                type="text" placeholder="$">
           
-                <input matInput name="nombre" [(ngModel)]="pedidoModel.nombre"
-                    type="text"
-                    placeholder="Nombre">
+              </div>
+
+              <br>
+             
+<div class="otroContenedor">
+    <button class="guardarButton" type="submit" >Guardar</button> &nbsp;
+    <button class="guardarButton" (click)="volver()" type="button">Volver</button>
+</div>
+
+             
+            </form>
             
-        </p>
-        <p>
-           
-                <input matInput name="raza" [(ngModel)]="pedidoModel.precio"
-                    type="text"
-                    placeholder="Raza">
-            
-        </p>
-      
-        <p>
-            <button type="submit" mat-flat-button color="accent">Guardar</button>
-        </p>
-    </form>
-    
+        </div>
+
+        
 
 </body>
 </html>
+
+
+
+
 
 

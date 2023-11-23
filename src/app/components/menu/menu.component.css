@@ -9,7 +9,7 @@
     padding-bottom: 50px;
     color: #000000;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Pacifico', cursive;
 }
 
@@ -52,4 +52,23 @@ a:hover{
 .botonesAcc:hover{
     color: #990808;
     background-color: #edc537;
+}
+
+.otroContenedor{
+padding-left: 42%;
+
+}
+
+.agregarButton{
+    color: white;
+    background-color: #990808;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.agregarButton:hover{
+    background-color: #edc537;
+    color: #990808;
 }

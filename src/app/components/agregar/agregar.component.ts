@@ -33,4 +33,7 @@ export class AgregarComponent implements OnInit {
       }
     );
   }
+   volver() {
+    this.router.navigate(['/menu']);
+  }
 }
